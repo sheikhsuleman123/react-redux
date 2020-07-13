@@ -26,15 +26,11 @@ const todoReducer = (state=initialState, action) => {
        }
        
        case  EDIT_TODO :       
-            const selectedItem = state.list.find((item) => {
-                  if(item === item[action.id]) return item;
-                });
-                console.log('edit todo',selectedItem);
+            // const selectedItem = state.list.find((item) => 
+            //       item === state.list[action.id] );
+                  
                 
-                // this.setState({
-                //     editId: selectedItem.title,
-                //     editText : selectedItem.subtitle,
-                //   })
+            
                 
         
         

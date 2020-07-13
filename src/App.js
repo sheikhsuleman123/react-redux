@@ -35,7 +35,13 @@ deleteTodo(index){
   
 }
 editTodo(index) {
-  this.props.editTodo(index)
+  
+  const selectedItem = this.props.list.find((item) => 
+  item === this.props.list[index] );
+  this.setState({
+    value : selectedItem
+  })
+
 }
 
   render() {
@@ -54,7 +60,8 @@ editTodo(index) {
               <p style={{display:'inline'}}
                key={index}
               onClick={() => this.editTodo(index)}  >
-                {item} 
+                {item}
+                {index} 
                 </p>
                 <button 
                 style={{marginLeft:30}}
