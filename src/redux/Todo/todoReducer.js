@@ -19,7 +19,8 @@ const todoReducer = (state=initialState, action) => {
         }
 
         case DELETE_TODO : 
-       const newList = state.list.filter((todo) => todo !== state.list[action.id]);
+       const newList = state.list.filter((todo) =>
+        todo !== state.list[action.id]);
        return {
            ...state,
            list : newList

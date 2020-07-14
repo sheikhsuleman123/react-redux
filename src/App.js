@@ -52,7 +52,8 @@ editTodo(index) {
           value={this.state.value}
           onChange={e => this.updateInput("value",e.target.value)}
           />
-          <button onClick={this.addTodo} style={{marginLeft:10}}> Add  </button>
+          <button onClick={this.addTodo} 
+          style={{marginLeft:10}}> Add  </button>
           
           {this.props.list.map((item,index) => {
             return(
